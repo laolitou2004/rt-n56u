@@ -12,7 +12,8 @@ download_test:
 
 extract_test:
 	( if [ ! -d $(SRC_NAME) ]; then \
-		tar zxf $(SRC_NAME).tar.gz -C htop-3.0.2; \
+		tar zxf $(SRC_NAME).tar.gz; \
+		mv htop-2.2.0 htop-3.0.2; \
 	fi )
 
 config_test:
